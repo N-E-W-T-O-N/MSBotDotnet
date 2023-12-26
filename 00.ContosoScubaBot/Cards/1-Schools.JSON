@@ -1,0 +1,361 @@
+{
+  "type": "message",
+  "inputHint": "expectingInput",
+  "speak": "Good afternoon! Please take a look at the great scuba schools nearby.  Margie's Travel, Fabrikam, Adventure Works, or Relecloud Diving",
+  "text": "Good afternoon! Please take a look at the great scuba schools nearby.",
+  "attachmentLayout": "carousel",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "3",
+                "spacing": "none",
+                "items": [
+                  {
+                    "type": "ColumnSet",
+                    "columns": [
+                      {
+                        "type": "Column",
+                        "width": "3",
+                        "items": [
+                          {
+                            "type": "Image",
+                            "width": "auto",
+                            "url": "https://raw.githubusercontent.com/matthidinger/ContosoScubaBot/master/wwwroot/Assets/dolphin-203875_640.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Column",
+                        "width": "3",
+                        "spacing": "medium",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "text": "Margie's Travel",
+                            "weight": "bolder"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "text": "4.4 stars",
+                            "spacing": "none"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "42 miles away",
+                    "weight": "bolder"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "1602 E Avenue Rd.",
+                    "spacing": "none"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "Gig Harbor, WA 98335",
+                    "spacing": "none"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "spacing": "none",
+                "items": [
+                  {
+                    "type": "Image",
+                    "url": "https://raw.githubusercontent.com/matthidinger/ContosoScubaBot/master/wwwroot/Assets/MargiesTravel2.png"
+                  }
+                ]
+
+              }
+            ]
+          }
+
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "This one",
+            "data": {
+              "school": "Margie's Travel"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "3",
+                "spacing": "none",
+                "items": [
+                  {
+                    "type": "ColumnSet",
+                    "columns": [
+                      {
+                        "type": "Column",
+                        "width": "3",
+                        "items": [
+                          {
+                            "type": "Image",
+                            "width": "auto",
+                            "url": "https://raw.githubusercontent.com/matthidinger/ContosoScubaBot/master/wwwroot/Assets/scuba-diver-1237237_640.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Column",
+                        "width": "3",
+                        "spacing": "medium",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "text": "Fabrikam",
+                            "weight": "bolder"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "text": "4.1 stars",
+                            "spacing": "none"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "13 miles away",
+                    "weight": "bolder"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "217 W Pine St.",
+                    "spacing": "none"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "Seattle, WA 98126",
+                    "spacing": "none"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "spacing": "none",
+                "items": [
+                  {
+                    "type": "Image",
+                    "url": "https://raw.githubusercontent.com/matthidinger/ContosoScubaBot/master/wwwroot/Assets/FabrikamLogo2.png"
+                  }
+                ]
+
+              }
+            ]
+          }
+
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "This one",
+            "data": {
+              "school": "Fabrikam"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "3",
+                "spacing": "none",
+                "items": [
+                  {
+                    "type": "ColumnSet",
+                    "columns": [
+                      {
+                        "type": "Column",
+                        "width": "3",
+                        "items": [
+                          {
+                            "type": "Image",
+                            "width": "auto",
+                            "url": "https://raw.githubusercontent.com/matthidinger/ContosoScubaBot/master/wwwroot/Assets/loggerhead-turtle-123402_640.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Column",
+                        "width": "3",
+                        "spacing": "medium",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "text": "Adventure Works",
+                            "weight": "bolder"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "text": "3.2 stars",
+                            "spacing": "none"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "7 miles away",
+                    "weight": "bolder"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "510 N Yale Ave.",
+                    "spacing": "none"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "Seattle, WA 98127",
+                    "spacing": "none"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "spacing": "none",
+                "items": [
+                  {
+                    "type": "Image",
+                    "url": "https://raw.githubusercontent.com/matthidinger/ContosoScubaBot/master/wwwroot/Assets/AdventureWorksLogo2.png"
+                  }
+                ]
+
+              }
+            ]
+          }
+
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "This one",
+            "data": {
+              "school": "Adventure Works"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "3",
+                "spacing": "none",
+                "items": [
+                  {
+                    "type": "ColumnSet",
+                    "columns": [
+                      {
+                        "type": "Column",
+                        "width": "3",
+                        "items": [
+                          {
+                            "type": "Image",
+                            "width": "auto",
+                            "url": "http://adaptivecards.io/content/Relecloud.png"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Column",
+                        "width": "3",
+                        "spacing": "medium",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "text": "Relecloud Diving",
+                            "weight": "bolder"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "text": "4.7 stars",
+                            "spacing": "none"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "15 miles away",
+                    "weight": "bolder"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "1210 W Hanford St.",
+                    "spacing": "none"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "Seattle, WA 98105",
+                    "spacing": "none"
+                  }
+                ]
+              }
+            ]
+          }
+
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "This one",
+            "data": {
+              "school": "Relecloud Diving"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+﻿{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "id": "bookingStatus",
+                        "size": "Large",
+                        "text": "**New Booking**"
+                      }
+                    ],
+                    "width": "stretch"
+                  },
+                  {
+                    "type": "Column",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "horizontalAlignment": "Right",
+                        "size": "Large",
+                        "text": "**Contoso Scuba**"
+                      }
+                    ],
+                    "width": "stretch"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "items": [
+                  {
+                    "type": "Image",
+                    "url": "http://adaptivecards.io/content/AlkiBeach.jpg",
+                    "size": "Large"
+                  }
+                ],
+                "width": "auto"
+              },
+              {
+                "type": "Column",
+                "items": [
+                  {
+                    "type": "ColumnSet",
+                    "columns": [
+                      {
+                        "type": "Column",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "color": "Accent",
+                            "text": "**School:**"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "{{school}}"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "color": "Accent",
+                            "text": "**Participants:**"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "{{number_of_people}}"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "color": "Accent",
+                            "text": "**Meal options:**"
+                          },
+                          {
+                            "type": "FactSet",
+                            "spacing": "None",
+                            "facts": [
+                              {
+                                "title": "Preference:",
+                                "value": "{{protein_preference}}"
+                              },
+                              {
+                                "title": "Vegan:",
+                                "value": "{{vegan}}"
+                              },
+                              {
+                                "title": "Allergies:",
+                                "value": "{{allergy}}"
+                              }
+                            ]
+                          }
+                        ],
+                        "width": "auto"
+                      },
+                      {
+                        "type": "Column",
+                        "spacing": "Large",
+                        "items": [
+                          {
+                            "type": "TextBlock",
+                            "color": "Accent",
+                            "text": "**Destination:**"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "{{destination}}"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "color": "Accent",
+                            "text": "**Date:**"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "{{longdate}}"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "color": "Accent",
+                            "text": "**Contact info:**"
+                          },
+                          {
+                            "type": "FactSet",
+                            "spacing": "None",
+                            "facts": [
+                              {
+                                "title": "Name:",
+                                "value": "{{name}}"
+                              },
+                              {
+                                "title": "Email:",
+                                "value": "{{email}}"
+                              },
+                              {
+                                "title": "Phone:",
+                                "value": "{{phone}}"
+                              }
+                            ]
+                          }
+                        ],
+                        "width": "stretch"
+                      }
+                    ]
+                  }
+                ],
+                "width": "stretch"
+              }
+            ]
+          }
+
+        ],
+        "actions": [
+          {
+            "type": "Action.ShowCard",
+            "title": "Confirm booking",
+            "card": {
+              "type": "AdaptiveCard",
+              "version": "1.0",
+              "body": [
+                {
+                  "type": "Input.Text",
+                  "id": "comment",
+                  "placeholder": "Remarks (optional)",
+                  "isMultiline": true
+                }
+              ],
+              "actions": [
+                {
+                  "type": "Action.Submit",
+                  "title": "Confirm booking"
+                }
+              ]
+            }
+          },
+          {
+            "type": "Action.OpenUrl",
+            "title": "Start chat",
+            "url": "{{url}}"
+          }
+        ]
+      }
+    }
+  ]
+}
